@@ -28,6 +28,7 @@ import { MoonLoader } from "react-spinners";
 import axios from "axios";
 import { useParams } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 // utils at the top of the file
 function decodeHTML(html) {
@@ -238,10 +239,13 @@ const Article = () => {
             </div>
 
             <div className="aspect-[1.6/1] border-[rgb(233_226_218)] md:border-l md:p-[3.2rem]">
-              <img
+              <Image
                 src={post._embedded["wp:featuredmedia"][0].source_url}
                 alt="Image"
                 className="size-full object-cover"
+                width={1050} // set desired width
+                height={550} // set desired height
+                priority
               />
             </div>
           </div>
@@ -338,13 +342,15 @@ const Article = () => {
                         <CarouselItem key={post.id}>
                           <Link href={`/blog/${post.slug}`} className="group">
                             <div className="aspect-[1.91/1]">
-                              <img
+                              <Image
                                 src={
                                   post._embedded?.["wp:featuredmedia"]?.[0]
                                     ?.source_url
                                 }
                                 alt={post.title.rendered}
                                 className="size-full object-cover"
+                                width={320} // set desired width
+                                height={320} // set desired height
                               />
                             </div>
 
@@ -576,12 +582,14 @@ const Article = () => {
                   key={post.id}
                 >
                   <div className="aspect-[1.91/1]">
-                    <img
+                    <Image
                       src={
                         post._embedded?.["wp:featuredmedia"]?.[0]?.source_url
                       }
                       alt="Image"
                       className="size-full object-cover"
+                      width={320} // set desired width
+                      height={320} // set desired height
                     />
                   </div>
 

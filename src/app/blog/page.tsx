@@ -11,6 +11,7 @@ import { AlignJustify, LayoutGrid } from "lucide-react";
 import { useEffect, useState } from "react";
 import { MoonLoader } from "react-spinners";
 import Link from "next/link";
+import Image from "next/image";
 
 const Blog = () => {
   const [layout, setLayout] = useState("grid");
@@ -140,13 +141,16 @@ const Blog = () => {
                   className="group relative"
                 >
                   <div className="aspect-[1.91/1]">
-                    <img
+                    <Image
                       src={
                         posts[0]._embedded?.["wp:featuredmedia"]?.[0]
-                          ?.source_url
+                          ?.source_url || "/fallback.jpg"
                       }
-                      alt={posts[0].title.rendered}
-                      className="size-full object-cover"
+                      alt={posts[0].title.rendered || "Post Image"}
+                      width={1050} // set desired width
+                      height={550} // set desired height
+                      className="object-cover"
+                      priority
                     />
                   </div>
 
@@ -193,12 +197,14 @@ const Blog = () => {
                     className="group"
                   >
                     <div className="aspect-[1.9/1]">
-                      <img
+                      <Image
                         src={
                           post._embedded?.["wp:featuredmedia"]?.[0]?.source_url
                         }
                         alt={post.title.rendered}
                         className="size-full object-cover"
+                        width={320} // set desired width
+                        height={320} // set desired height
                       />
                     </div>
 
@@ -275,13 +281,15 @@ const Blog = () => {
                         rel="noopener noreferrer"
                       >
                         <div className="aspect-[1.91/1]">
-                          <img
+                          <Image
                             src={
                               post._embedded?.["wp:featuredmedia"]?.[0]
                                 ?.source_url
                             }
                             alt="Image"
                             className="size-full object-cover"
+                            width={320} // set desired width
+                            height={320} // set desired height
                           />
                         </div>
 
@@ -329,13 +337,15 @@ const Blog = () => {
                           className="aspect-[1.91/1] w-[35%]"
                           rel="noopener noreferrer"
                         >
-                          <img
+                          <Image
                             src={
                               post._embedded?.["wp:featuredmedia"]?.[0]
                                 ?.source_url
                             }
                             alt="Image"
                             className="size-full object-cover"
+                            width={320} // set desired width
+                            height={320} // set desired height
                           />
                         </Link>
 
