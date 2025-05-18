@@ -28,7 +28,7 @@ const testimonials = [
       "Kashaf brings fresh ideas and energy to the team, making sure our services reach the right people with the right message.",
     name: "Kashaf Khan",
     designation: "Marketing Executive",
-    src: "/images/dummy-female.webp",
+    src: "/images/dummy-female.jpg",
   },
   {
     quote:
@@ -42,7 +42,7 @@ const testimonials = [
       "Noama approaches every case with care and precision, committed to delivering thoughtful and effective legal solutions.",
     name: "Noama Khan",
     designation: "Associate Lawyer",
-    src: "/images/dummy-female-2.webp",
+    src: "/images/dummy-female-2.jpg",
   },
   {
     quote:
