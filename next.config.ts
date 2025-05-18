@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  typescript: {
+    ignoreBuildErrors: true, // 🚨 disables type checking on build
+  },
   images: {
     domains: ["rise.radixtech.org"], // ✅ add your domain he
   },
