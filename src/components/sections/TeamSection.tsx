@@ -14,14 +14,14 @@ const testimonials = [
       "Saiqa plays a key role in shaping the firm’s values, focusing on trust, professionalism, and client care at every step.",
     name: "Saiqa Ansari",
     designation: "Co-Founder & CEO",
-    src: "/images/Saiqa.jpg",
+    src: "/images/saiqa.jpg",
   },
   {
     quote:
       "Awais is dedicated to delivering solid legal support, handling each case with focus, integrity, and attention to detail.",
     name: "Awais Alam",
     designation: "Associate Lawyer",
-    src: "/images/Awais.jpg",
+    src: "/images/awais.jpg",
   },
   {
     quote:
@@ -49,7 +49,7 @@ const testimonials = [
       "Saqib Soomro is a Tax Litigation Associate skilled in resolving tax disputes and protecting client interests.",
     name: "Saqib soomro",
     designation: "Tax Litigation Associate",
-    src: "/images/Saqib.jpg",
+    src: "/images/saqib.jpg",
   },
 ];
 
