@@ -190,7 +190,7 @@ const TabSlider = () => {
           <div className="flex h-[30rem] w-full justify-center overflow-hidden rounded-[2.4rem] md:h-[50rem] xl:h-[43.5rem]">
             <Image
               src={heroSlides[selectedIndex].img}
-              className="object-contain object-center"
+              className="object-cover object-top"
               alt=""
               width={600}
               height={800}

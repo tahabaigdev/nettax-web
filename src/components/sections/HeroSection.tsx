@@ -108,7 +108,7 @@ const HeroSection = () => {
                 />
               </div>
 
-              <div className="absolute top-0 right-0 aspect-[.8/1] w-[53%] overflow-hidden rounded-[.8rem]">
+              <div className="absolute top-0 right-0 aspect-[.8/1] w-[53%] overflow-hidden rounded-[.8rem] border-[4px]">
                 <Image
                   src="/images/hero-img-01.png"
                   alt="Hero Bg"
@@ -117,7 +117,7 @@ const HeroSection = () => {
                   height={1200}
                 />
 
-                <div className="absolute top-[11.3rem] left-[2.3rem] z-[9] aspect-[1.7/1] w-[28%]">
+                <div className="absolute top-[0rem] left-[0rem] z-[9] aspect-[1.7/1] w-[28%]">
                   <Image
                     src="/images/spring.svg"
                     alt="Spring"
