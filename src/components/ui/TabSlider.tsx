@@ -11,6 +11,7 @@ import {
 import { useEffect, useRef, useState } from "react";
 import { Button } from "./button";
 import Link from "next/link";
+import Image from "next/image";
 
 interface Feature {
   label: string;
@@ -20,7 +21,7 @@ interface Feature {
 interface HeroSlide {
   heading: string;
   subtext: string;
-  video: string;
+  img: string;
 }
 
 const features: Feature[] = [
@@ -47,25 +48,25 @@ const heroSlides: HeroSlide[] = [
     heading: "Your Trusted Tax & Legal Consultant",
     subtext:
       "Let experts take the stress out of your taxes, filings, and compliance. We handle the legal work so you can focus on what matters most.",
-    video: "/videos/hero-video.webm",
+    img: "/images/feature-img-01.png",
   },
   {
     heading: "Accurate & Compliant Tax Filing",
     subtext:
       "Stay on the right side of the law. We ensure every tax return is error-free and fully compliant with legal requirements.",
-    video: "/videos/hero-video.webm",
+    img: "/images/feature-img-02.jpg",
   },
   {
     heading: "Fast Business & NTN Registration",
     subtext:
       "Whether you're starting a business or need an NTN, we handle the paperwork quickly and correctly — so you can go live faster.",
-    video: "/videos/hero-video.webm",
+    img: "/images/feature-img-03.jpg",
   },
   {
     heading: "Personalized Legal Advice",
     subtext:
       "From tax planning to legal notices, get expert support tailored to your needs — not generic templates.",
-    video: "/videos/hero-video.webm",
+    img: "/images/feature-img-04.jpg",
   },
 ];
 
@@ -147,9 +148,21 @@ const TabSlider = () => {
           className="flex flex-col items-start gap-[3.2rem] xl:flex-row xl:items-center"
         >
           <div className="flex w-full max-w-[60rem] flex-col justify-center xl:max-w-[46.8rem]">
-            <h3 className="ibm-font mb-[2.4rem] text-[3rem] leading-[4rem] font-medium tracking-[-2px] text-(--base-color-01) capitalize md:text-[5rem] md:leading-[6rem]">
-              {heroSlides[selectedIndex].heading}
-            </h3>
+            <div className="relative">
+              <div className="absolute top-[-3.5rem] right-[2rem] w-[7%]">
+                <Image
+                  src="/images/rays-03.svg"
+                  alt="Image"
+                  className="object-contain object-center"
+                  height={67}
+                  width={63}
+                />
+              </div>
+
+              <h3 className="ibm-font mb-[2.4rem] text-[3rem] leading-[4rem] font-medium tracking-[-2px] text-(--base-color-01) capitalize md:text-[5rem] md:leading-[6rem]">
+                {heroSlides[selectedIndex].heading}
+              </h3>
+            </div>
 
             <p className="mb-[2.4rem] text-[1.6rem] leading-[2.4rem] font-normal text-(--base-color-01) md:text-[2rem] md:leading-[2.8rem]">
               {heroSlides[selectedIndex].subtext}
@@ -174,16 +187,14 @@ const TabSlider = () => {
             </div>
           </div>
 
-          <div className="h-[30rem] w-full overflow-hidden rounded-[2.4rem] md:h-[50rem] xl:h-[43.5rem]">
-            <video
-              src={heroSlides[selectedIndex].video}
-              muted
-              autoPlay
-              playsInline
-              loop
-              preload="auto"
-              className="size-full object-cover object-center"
-            ></video>
+          <div className="flex h-[30rem] w-full justify-center overflow-hidden rounded-[2.4rem] md:h-[50rem] xl:h-[43.5rem]">
+            <Image
+              src={heroSlides[selectedIndex].img}
+              className="object-contain object-center"
+              alt=""
+              width={600}
+              height={800}
+            />
           </div>
         </motion.div>
       </AnimatePresence>

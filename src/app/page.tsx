@@ -1,4 +1,3 @@
-import { FadeIn } from "@/components/layout/FadeIn";
 import ContactSection from "@/components/sections/ContactSection";
 import DostSection from "@/components/sections/DostSection";
 import FeatureSection from "@/components/sections/FeatureSection";
@@ -14,37 +13,21 @@ const Home = () => {
     <>
       <HeroSection />
 
-      <FadeIn delay={0.5}>
-        <DostSection />
-      </FadeIn>
+      <DostSection />
 
-      <FadeIn delay={0.5}>
-        <GuruSection />
-      </FadeIn>
+      <GuruSection />
 
-      <FadeIn delay={0.5}>
-        <FeatureSection />
-      </FadeIn>
+      <FeatureSection />
 
-      <FadeIn delay={0.5}>
-        <TimelineSection />
-      </FadeIn>
+      <TimelineSection />
 
-      <FadeIn delay={0.5}>
-        <TeamSection />
-      </FadeIn>
+      <TeamSection />
 
-      <FadeIn delay={0.5}>
-        <PartnerSection />
-      </FadeIn>
+      <PartnerSection />
 
-      <FadeIn delay={0.5}>
-        <ServiceSection />
-      </FadeIn>
+      <ServiceSection />
 
-      <FadeIn delay={0.5}>
-        <ContactSection />
-      </FadeIn>
+      <ContactSection />
     </>
   );
 };

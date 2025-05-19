@@ -56,16 +56,6 @@ const testimonials = [
 const TeamSection = () => {
   return (
     <section className="relative bg-[#EEF8FF] px-[2rem] py-[5rem] lg:py-[9.6rem] xl:px-[0rem]">
-      <div className="absolute right-[5rem] bottom-[50rem] aspect-[1.1/1] w-[4%]">
-        <Image
-          src="/images/line-04.svg"
-          alt="Image"
-          className="object-contain object-center"
-          width={60}
-          height={121}
-        />
-      </div>
-
       <div className="absolute top-[10rem] left-[5rem] aspect-[1.1/1] w-[4%]">
         <Image
           src="/images/spring-02.svg"
@@ -73,16 +63,6 @@ const TeamSection = () => {
           className="object-contain object-center"
           width={76}
           height={66}
-        />
-      </div>
-
-      <div className="absolute top-[40rem] right-[50rem] aspect-[1.1/1] w-[4%]">
-        <Image
-          src="/images/line-03.svg"
-          alt="Image"
-          className="object-contain object-center"
-          width={40}
-          height={91}
         />
       </div>
 

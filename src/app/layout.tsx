@@ -4,7 +4,6 @@ import { IBM_Plex_Sans, Outfit } from "next/font/google";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import LenisProvider from "@/components/layout/LenisProvider";
-import { FadeIn } from "@/components/layout/FadeIn";
 
 const ibmPlexSans = IBM_Plex_Sans({
   subsets: ["latin"],
@@ -37,15 +36,13 @@ export default function RootLayout({
     <html lang="en" className={`${outfit.variable} ${ibmPlexSans.variable}`}>
       <body>
         <LenisProvider>
-          <FadeIn delay={0.3}>
-            <header>
-              <Header />
-            </header>
-            <main>{children}</main>
-            <footer>
-              <Footer />
-            </footer>
-          </FadeIn>
+          <header>
+            <Header />
+          </header>
+          <main>{children}</main>
+          <footer>
+            <Footer />
+          </footer>
         </LenisProvider>
       </body>
     </html>

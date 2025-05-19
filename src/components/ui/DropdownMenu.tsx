@@ -2,12 +2,14 @@
 
 import clsx from "clsx";
 import { ChevronDown, MoveRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
 interface DropdownMenuProps {
   label: string;
   href: string;
+  image: string;
   description?: string;
   items: { label: string; href: string; description?: string }[];
 }
@@ -15,6 +17,7 @@ interface DropdownMenuProps {
 const DropdownMenu = ({
   label,
   items,
+  image,
   href,
   description,
 }: DropdownMenuProps) => {
@@ -82,7 +85,15 @@ const DropdownMenu = ({
                   {label}
                 </h4>
 
-                <div className="h-[20rem] w-full bg-amber-100"></div>
+                <div className="h-[17rem] w-full bg-amber-100">
+                  <Image
+                    src={image}
+                    alt="Image"
+                    className="size-full object-cover object-center"
+                    width={800}
+                    height={600}
+                  />
+                </div>
 
                 <p className="text-[1.5rem] font-normal text-white">
                   {description}

@@ -28,7 +28,7 @@ const ContactSection = () => {
       </div>
 
       <div className="container">
-        <div className="relative z-[1] grid grid-cols-1 items-center gap-[4rem] overflow-hidden rounded-[2.4rem] bg-(--secondary-color) px-[1rem] pt-[3rem] md:px-[4.8rem] md:pt-[7.2rem] lg:grid-cols-2">
+        <div className="relative z-[1] grid grid-cols-1 items-end gap-[4rem] overflow-hidden rounded-[2.4rem] bg-(--secondary-color) px-[1rem] pt-[3rem] md:px-[4.8rem] lg:grid-cols-2">
           <div className="absolute inset-0 z-[-1] opacity-40">
             <Image
               src="/images/bg-noise.avif"
@@ -45,7 +45,7 @@ const ContactSection = () => {
             <ContactForm />
           </div>
 
-          <div className="order-[-1] flex flex-col gap-[2.4rem] lg:order-none">
+          <div className="order-[-1] flex flex-col gap-[2.4rem] pb-[3rem] lg:order-none">
             <h3 className="text-[3rem] leading-[3.5rem] font-medium tracking-[-2px] text-white md:text-[3.6rem] md:leading-[4.33rem]">
               We&apos;re Here to Help
             </h3>
@@ -55,8 +55,8 @@ const ContactSection = () => {
               Contact us today for trusted, personalized support.
             </p>
 
-            <div className="hidden items-center gap-[2rem] xl:flex">
-              <Button asChild>
+            <div className="flex flex-col items-center gap-[2rem] md:flex-row">
+              <Button className="w-full md:w-auto" asChild>
                 <Link href="/">
                   <span>Get Free Consultation</span>
 
@@ -64,7 +64,7 @@ const ContactSection = () => {
                 </Link>
               </Button>
 
-              <Button variant="dark" asChild>
+              <Button className="w-full md:w-auto" variant="dark" asChild>
                 <Link href="/">
                   <span>Become a Filer</span>
 

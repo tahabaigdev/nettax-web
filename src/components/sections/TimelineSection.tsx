@@ -35,26 +35,6 @@ const TimelineSection = () => {
 
   return (
     <section className="relative px-[2rem] py-[5rem] lg:py-[9.6rem] xl:px-[0rem]">
-      <div className="absolute top-[40rem] right-[10rem] aspect-[1.1/1] w-[5%]">
-        <Image
-          src="/images/rays-03.svg"
-          alt="Image"
-          className="object-contain object-center"
-          width={63}
-          height={67}
-        />
-      </div>
-
-      <div className="absolute top-[10rem] left-[15rem] z-[-1] aspect-[1.1/1] w-[5%]">
-        <Image
-          src="/images/line-03.svg"
-          alt="Image"
-          className="object-contain object-center"
-          width={40}
-          height={91}
-        />
-      </div>
-
       <div className="absolute right-[30rem] bottom-[20rem] aspect-[1.1/1] w-[3%]">
         <Image
           src="/images/mark-01.svg"
@@ -87,7 +67,19 @@ const TimelineSection = () => {
 
       <div className="container grid gap-[6.4rem]">
         <div className="relative z-[1] flex flex-col items-center gap-[2.4rem] text-center">
-          <SectionTitle label="Achieve Financial Success with Our Trusted Experts" />
+          <div className="relative">
+            <div className="absolute top-[-2rem] right-[1rem] w-[7%] md:top-[-3rem] md:right-[-3rem]">
+              <Image
+                src="/images/rays-03.svg"
+                alt="Image"
+                className="object-contain object-center"
+                height={67}
+                width={63}
+              />
+            </div>
+
+            <SectionTitle label="Achieve Financial Success with Our Trusted Experts" />
+          </div>
 
           <SectionDescription label="Hyderabad’s leading taxation firm, delivering expert tax services to a diverse range of clients across Sindh." />
 

@@ -18,49 +18,39 @@ const imagesMap: Record<string, React.ReactNode> = {
         <Image
           src="/images/about-section-bg.avif"
           alt="About Section Bg"
-          className="size-full object-cover object-center"
+          className="object-cover object-center"
           width={755}
           height={1024}
           priority
         />
 
-        <div className="shadow-06 absolute top-[10.6rem] left-[50%] w-[76%] translate-x-[-50%]">
+        <div className="aspect-[.9 / 1] absolute top-1/2 left-1/2 w-[76%] translate-[-50%]">
           <Image
-            src="/images/about-section-img-01.avif"
+            src="/images/nettax-guru-img-01.png"
             alt="About Section Bg"
-            className="size-full object-contain object-center"
-            width={512}
-            height={125}
+            className="object-cover object-center"
+            width={760}
+            height={840}
           />
         </div>
 
-        <div className="absolute bottom-[10.2rem] left-[50%] aspect-[2.1/1] w-[80%] translate-x-[-50%]">
+        <div className="aspect-[1.1 / 1] absolute top-[1rem] left-[1rem] w-[12%]">
           <Image
-            src="/images/about-section-img-02.avif"
+            src="/images/heart-01.svg"
             alt="About Section Bg"
-            className="size-full object-contain object-center"
-            width={768}
-            height={278}
+            className="object-contain object-center"
+            width={46}
+            height={43}
           />
         </div>
 
-        <div className="absolute top-[7rem] left-[2.3rem] h-[2.8rem] w-[11%]">
+        <div className="aspect-[2 / 1] absolute right-[-1rem] bottom-[-1rem] w-[50%]">
           <Image
-            src="/images/mark-01.svg"
+            src="/images/circle-01.svg"
             alt="About Section Bg"
-            className="size-full object-contain object-center"
-            width={48}
-            height={34}
-          />
-        </div>
-
-        <div className="absolute bottom-[-10rem] left-[46%] aspect-[2.1/1] w-[69%] translate-[-50%]">
-          <Image
-            src="/images/line-01.svg"
-            alt="About Section Bg"
-            className="size-full object-contain object-center"
-            width={275}
-            height={96}
+            className="object-contain object-center"
+            width={250}
+            height={167}
           />
         </div>
       </div>
@@ -78,33 +68,33 @@ const imagesMap: Record<string, React.ReactNode> = {
           priority
         />
 
-        <div className="aspect-[.9 / 1] absolute top-1/2 left-1/2 w-[69%] translate-[-50%]">
+        <div className="aspect-[.9 / 1] absolute top-1/2 left-1/2 w-[76%] translate-[-50%]">
           <Image
-            src="/images/about-section-img-03.avif"
+            src="/images/nettax-guru-img-02.png"
             alt="About Section Bg"
-            className="object-contain object-center"
-            height={686}
-            width={688}
+            className="object-cover object-center"
+            width={760}
+            height={840}
           />
         </div>
 
-        <div className="aspect-[1.1 / 1] absolute top-[4rem] right-[2rem] h-[4rem] w-[13%]">
+        <div className="aspect-[1.1 / 1] absolute top-[1rem] left-[1rem] w-[12%]">
           <Image
-            src="/images/rays-02.svg"
+            src="/images/heart-01.svg"
             alt="About Section Bg"
             className="object-contain object-center"
-            width={44}
-            height={40}
+            width={46}
+            height={43}
           />
         </div>
 
-        <div className="aspect-[7.4 / 1] absolute bottom-[-1rem] left-[-7.7rem] w-[145%]">
+        <div className="aspect-[2 / 1] absolute right-[-1rem] bottom-[-1rem] w-[50%]">
           <Image
-            src="/images/line-02.svg"
+            src="/images/circle-01.svg"
             alt="About Section Bg"
             className="object-contain object-center"
-            width={499}
-            height={67}
+            width={250}
+            height={167}
           />
         </div>
       </div>
@@ -124,7 +114,7 @@ const imagesMap: Record<string, React.ReactNode> = {
 
         <div className="aspect-[.9 / 1] absolute top-1/2 left-1/2 w-[76%] translate-[-50%]">
           <Image
-            src="/images/about-section-img-04.avif"
+            src="/images/nettax-guru-img-03.png"
             alt="About Section Bg"
             className="object-cover object-center"
             width={760}

@@ -1,4 +1,4 @@
-import { ArrowUpRight, MoveRight } from "lucide-react";
+import { MoveRight } from "lucide-react";
 import Image from "next/image";
 
 const linkItem = [
@@ -20,22 +20,22 @@ const linkItem = [
   { id: 15, link: "", img: "/images/partner-logo-5.svg" },
 ];
 
-const integrationItems = [
-  {
-    title: "Google Suite",
-    description:
-      "Get your job done faster by connecting Calendly to Google Calendar, Meet, Analytics, and more.",
-    logo: "/images/google-logo.svg",
-    link: "#",
-  },
-  {
-    title: "Google Suite",
-    description:
-      "Get your job done faster by connecting Calendly to Google Calendar, Meet, Analytics, and more.",
-    logo: "/images/google-logo.svg",
-    link: "#",
-  },
-];
+// const integrationItems = [
+//   {
+//     title: "Google Suite",
+//     description:
+//       "Get your job done faster by connecting Calendly to Google Calendar, Meet, Analytics, and more.",
+//     logo: "/images/google-logo.svg",
+//     link: "#",
+//   },
+//   {
+//     title: "Google Suite",
+//     description:
+//       "Get your job done faster by connecting Calendly to Google Calendar, Meet, Analytics, and more.",
+//     logo: "/images/google-logo.svg",
+//     link: "#",
+//   },
+// ];
 
 const PartnerSection = () => {
   return (
@@ -63,9 +63,21 @@ const PartnerSection = () => {
       <div className="container">
         <div className="grid gap-[4rem]">
           <div className="grid grid-cols-1 items-center gap-[2rem] md:gap-[4.8rem] lg:grid-cols-2">
-            <h3 className="ibm-font text-[3rem] leading-[4rem] font-medium tracking-[-2px] text-(--base-color-01) md:max-w-[60rem] md:text-[4.5rem] md:leading-[6rem]">
-              Trusted Partners Built on trust and expertise.
-            </h3>
+            <div className="relative">
+              <div className="absolute top-[-2rem] right-[2rem] w-[7%] md:right-[8rem] lg:top-[-3rem] lg:right-[-3rem]">
+                <Image
+                  src="/images/rays-03.svg"
+                  alt="Image"
+                  className="object-contain object-center"
+                  height={67}
+                  width={63}
+                />
+              </div>
+
+              <h3 className="ibm-font text-[3rem] leading-[4rem] font-medium tracking-[-2px] text-(--base-color-01) md:max-w-[60rem] md:text-[4.5rem] md:leading-[6rem]">
+                Trusted Partners Built on trust and expertise.
+              </h3>
+            </div>
 
             <div className="flex flex-col gap-[1.6rem]">
               <span className="text-[1.4rem] leading-[2.4rem] text-(--base-color-01) md:text-[2rem] md:leading-[2.8rem]">
@@ -105,7 +117,7 @@ const PartnerSection = () => {
           </div>
         </div>
 
-        <div className="mt-[2rem] grid grid-cols-1 gap-[3.2rem] lg:grid-cols-2">
+        {/* <div className="mt-[2rem] grid grid-cols-1 gap-[3.2rem] lg:grid-cols-2">
           {integrationItems.map((item, index) => (
             <div key={index}>
               <a
@@ -134,7 +146,7 @@ const PartnerSection = () => {
               </a>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

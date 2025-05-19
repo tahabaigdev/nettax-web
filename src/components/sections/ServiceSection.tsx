@@ -20,26 +20,6 @@ const ServiceSection = () => {
 
   return (
     <section className="relative z-[1] overflow-hidden bg-[#EEF8FF] px-[2rem] py-[5rem] lg:py-[9.6rem] xl:px-[0rem]">
-      <div className="absolute top-[5rem] right-[5rem] aspect-[1.1/1] w-[5%]">
-        <Image
-          src="/images/rays-03.svg"
-          alt="Image"
-          className="object-contain object-center"
-          width={63}
-          height={67}
-        />
-      </div>
-
-      <div className="absolute top-[20rem] left-[5rem] z-[-1] aspect-[1.1/1] w-[5%]">
-        <Image
-          src="/images/line-03.svg"
-          alt="Image"
-          className="object-contain object-center"
-          width={40}
-          height={91}
-        />
-      </div>
-
       <div className="absolute bottom-[2rem] left-[70rem] aspect-[1.1/1] w-[3%]">
         <Image
           src="/images/mark-01.svg"
@@ -53,9 +33,21 @@ const ServiceSection = () => {
       <div className="container">
         <div className="flex flex-col gap-[4rem]">
           <div className="grid grid-cols-1 items-center gap-[4.8rem] lg:grid-cols-2">
-            <h3 className="ibm-font text-[3rem] leading-[4rem] font-medium tracking-[-2px] text-(--base-color-01) md:max-w-[60rem] md:text-[4.5rem] md:leading-[6rem]">
-              Strategic Legal Solutions for Individuals and Businesses
-            </h3>
+            <div className="relative">
+              <div className="absolute top-[-2rem] right-[1rem] w-[7%] md:right-[13rem] lg:top-[-3rem] lg:right-[0rem]">
+                <Image
+                  src="/images/rays-03.svg"
+                  alt="Image"
+                  className="object-contain object-center"
+                  height={67}
+                  width={63}
+                />
+              </div>
+
+              <h3 className="ibm-font text-[3rem] leading-[4rem] font-medium tracking-[-2px] text-(--base-color-01) md:max-w-[60rem] md:text-[4.5rem] md:leading-[6rem]">
+                Strategic Legal Solutions for Individuals and Businesses
+              </h3>
+            </div>
 
             <div className="flex flex-col gap-[1.6rem]">
               <span className="text-[1.4rem] leading-[2.4rem] text-(--base-color-01) md:text-[2rem] md:leading-[2.8rem]">

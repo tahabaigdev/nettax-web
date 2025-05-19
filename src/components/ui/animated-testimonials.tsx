@@ -45,7 +45,7 @@ export const AnimatedTestimonials = ({
   };
   return (
     <div className="">
-      <div className="relative grid grid-cols-1 gap-[6rem] lg:grid-cols-2 lg:gap-[0rem]">
+      <div className="relative grid grid-cols-1 items-end gap-[6rem] lg:grid-cols-2 lg:gap-[0rem]">
         <div className="flex justify-center lg:block">
           <div className="relative aspect-[1/1] w-[70%]">
             <AnimatePresence>
@@ -114,7 +114,19 @@ export const AnimatedTestimonials = ({
               ease: "easeInOut",
             }}
           >
-            <h3 className="ibm-font text-[3.5rem] leading-[4rem] font-medium tracking-[-2px] text-(--base-color-01) md:text-[5rem] md:leading-[6rem]">
+            <h6 className="ibm-font max-w-[70rem] text-[3.5rem] leading-[4.5rem] font-medium tracking-[-2px] text-(--base-color-01) md:text-[6rem] md:leading-[6rem]">
+              Meet Our Team
+            </h6>
+
+            <p className="my-[2rem] text-(--base-color-01) md:text-[2rem] md:leading-[3rem]">
+              We partner with our clients to provide bespoke tax solutions,
+              leveraging leading-edge technology and deep expertise. Our
+              commitment to transparency and clarity means you understand every
+              step of the process, empowering you to make smart
+              financial decisions.
+            </p>
+
+            <h3 className="ibm-font text-[3.5rem] leading-[4rem] font-medium tracking-[-2px] text-(--base-color-01) md:text-[3rem] md:leading-[4rem]">
               {testimonials[active].name}
             </h3>
             <p className="text-(--base-color-01) md:text-[2rem] md:leading-[3rem]">
@@ -150,15 +162,16 @@ export const AnimatedTestimonials = ({
           <div className="flex gap-4">
             <button
               onClick={handlePrev}
-              className="group/button flex size-[4rem] items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"
+              className="group/button flex size-[4rem] items-center justify-center rounded-full bg-(--primary-color)"
             >
-              <IconArrowLeft className="size-[2rem] text-black transition-transform duration-300 group-hover/button:rotate-12 dark:text-neutral-400" />
+              <IconArrowLeft className="size-[2rem] text-white transition-transform duration-300 group-hover/button:rotate-12" />
             </button>
+
             <button
               onClick={handleNext}
-              className="group/button flex size-[4rem] items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"
+              className="group/button flex size-[4rem] items-center justify-center rounded-full bg-(--primary-color)"
             >
-              <IconArrowRight className="size-[2rem] text-black transition-transform duration-300 group-hover/button:-rotate-12 dark:text-neutral-400" />
+              <IconArrowRight className="size-[2rem] text-white transition-transform duration-300 group-hover/button:-rotate-12" />
             </button>
           </div>
         </div>
