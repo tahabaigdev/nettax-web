@@ -14,7 +14,7 @@ const productsItem2 = ["Sindh Revenue Board", "SECP", "PSEB", "FBR"];
 
 const Footer = () => {
   return (
-    <footer className="bg-(--secondary-color)">
+    <footer className="bg-(--primary-color)">
       <div className="container px-[2rem] pt-[6rem] lg:pt-[10rem] xl:px-[0rem]">
         <div className="relative grid grid-cols-1 gap-y-[4rem] sm:grid-cols-2 lg:grid-cols-4 lg:gap-y-[0rem]">
           <div className="flex flex-col gap-[2rem]">

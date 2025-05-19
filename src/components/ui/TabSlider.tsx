@@ -54,13 +54,13 @@ const heroSlides: HeroSlide[] = [
     heading: "Accurate & Compliant Tax Filing",
     subtext:
       "Stay on the right side of the law. We ensure every tax return is error-free and fully compliant with legal requirements.",
-    img: "/images/feature-img-02.jpg",
+    img: "/images/feature-img-02.png",
   },
   {
     heading: "Fast Business & NTN Registration",
     subtext:
       "Whether you're starting a business or need an NTN, we handle the paperwork quickly and correctly — so you can go live faster.",
-    img: "/images/feature-img-03.jpg",
+    img: "/images/feature-img-03.png",
   },
   {
     heading: "Personalized Legal Advice",
@@ -190,7 +190,7 @@ const TabSlider = () => {
           <div className="flex h-[30rem] w-full justify-center overflow-hidden rounded-[2.4rem] md:h-[50rem] xl:h-[43.5rem]">
             <Image
               src={heroSlides[selectedIndex].img}
-              className="object-cover object-top"
+              className="object-contain object-top"
               alt=""
               width={600}
               height={800}
