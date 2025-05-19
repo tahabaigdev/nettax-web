@@ -1,20 +1,14 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import { ChevronRight } from "lucide-react";
+import { CalendarClock, ChevronRight } from "lucide-react";
 import ContactForm from "../ui/ContactForm";
 
 const ContactSection = () => {
   return (
     <section className="relative px-[2rem] py-[5rem] lg:py-[7rem] xl:px-[0rem]">
-      <div className="absolute top-[20rem] right-[10rem] aspect-[1.1/1] w-[5%]">
-        <Image
-          src="/images/rocket-02.svg"
-          alt="Image"
-          className="size-full object-contain object-center"
-          width={105}
-          height={71}
-        />
+      <div className="absolute top-[20rem] right-[5rem] aspect-[1.1/1] w-[5%]">
+        <CalendarClock className="size-[6rem] -rotate-45 stroke-[1.5px] text-(--primary-color)" />
       </div>
 
       <div className="absolute bottom-[10rem] left-[5rem] aspect-[1.1/1] w-[5%]">
@@ -36,6 +30,16 @@ const ContactSection = () => {
               className="object-cover object-center"
               fill
               priority
+            />
+          </div>
+
+          <div className="absolute top-[0rem] right-[0rem] z-[-1] opacity-20">
+            <Image
+              src="/images/logo-icon.svg"
+              alt="Image"
+              className="object-cover object-center"
+              height={500}
+              width={500}
             />
           </div>
 

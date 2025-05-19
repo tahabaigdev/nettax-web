@@ -3,20 +3,14 @@ import SectionTitle from "../ui/SectionTitle";
 import SectionDescription from "../ui/SectionDescription";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import { ChevronRight } from "lucide-react";
+import { BookOpenText, ChevronRight } from "lucide-react";
 import { ContainerScroll } from "../ui/container-scroll-animation";
 
 const DostSection = () => {
   return (
     <section className="relative z-[1] overflow-hidden bg-[#EEF8FF] py-[5rem] lg:py-[9.6rem]">
-      <div className="absolute bottom-[5rem] left-[10rem] aspect-[1.1/1] w-[6%]">
-        <Image
-          src="/images/rocket-02.svg"
-          alt="Image"
-          className="object-contain object-center"
-          height={71}
-          width={105}
-        />
+      <div className="absolute bottom-[2rem] left-[10rem] aspect-[1.1/1] w-[6%]">
+        <BookOpenText className="size-[6rem] rotate-12 stroke-[1.5px] text-(--primary-color)" />
       </div>
 
       <div className="bg-dot absolute inset-0 z-[-1] size-[100%] opacity-[0.05]"></div>

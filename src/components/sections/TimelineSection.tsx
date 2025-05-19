@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import SectionDescription from "../ui/SectionDescription";
 import SectionTitle from "../ui/SectionTitle";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, CircleGauge } from "lucide-react";
 import ProcessTimeline from "../ui/ProcessTimeline";
 import { useRef } from "react";
 import Image from "next/image";
@@ -46,13 +46,7 @@ const TimelineSection = () => {
       </div>
 
       <div className="absolute top-[120rem] right-[20rem] aspect-[1.1/1] w-[5%]">
-        <Image
-          src="/images/rocket-02.svg"
-          alt="Image"
-          className="size-full object-contain object-center"
-          width={105}
-          height={71}
-        />
+        <CircleGauge className="size-[6rem] rotate-12 stroke-[1.5px] text-(--primary-color)" />
       </div>
 
       <div className="absolute bottom-[70rem] left-[30rem] aspect-[1.1/1] w-[5%]">

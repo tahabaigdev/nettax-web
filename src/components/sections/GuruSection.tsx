@@ -3,7 +3,7 @@ import SectionTitle from "../ui/SectionTitle";
 import SectionDescription from "../ui/SectionDescription";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, GraduationCap } from "lucide-react";
 import Image from "next/image";
 import AccordionSlider from "../ui/AccordionSlider";
 
@@ -11,13 +11,7 @@ const GuruSection = () => {
   return (
     <section className="relative overflow-hidden px-[2rem] py-[5rem] lg:py-[11.2rem] xl:px-[0rem]">
       <div className="absolute right-[5rem] bottom-[40rem] aspect-[1.1/1] w-[6%]">
-        <Image
-          src="/images/rocket.svg"
-          alt="Image"
-          className="object-contain object-center"
-          width={60}
-          height={70}
-        />
+        <GraduationCap className="size-[6rem] -rotate-45 stroke-[1.5px] text-(--primary-color)" />
       </div>
 
       <div className="container grid gap-[6.4rem]">

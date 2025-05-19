@@ -113,7 +113,7 @@ const Navbar = () => {
         <DropdownMenu
           label="Our Services"
           description="Planetary problems. Global solutions. Local deployment."
-          image="/images/nettax-services-dropdown.gif"
+          image="/images/nettax-services-dropdown.jpeg"
           href="/"
           items={[
             {

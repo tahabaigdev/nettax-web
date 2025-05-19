@@ -66,7 +66,7 @@ const heroSlides: HeroSlide[] = [
     heading: "Personalized Legal Advice",
     subtext:
       "From tax planning to legal notices, get expert support tailored to your needs — not generic templates.",
-    img: "/images/feature-img-04.jpg",
+    img: "/images/feature-img-04.png",
   },
 ];
 

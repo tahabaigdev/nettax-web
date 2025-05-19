@@ -176,7 +176,7 @@ const CardSlider = ({ swiperRef, onSlideChange }: CardSliderProps) => {
               className="group relative z-[1] grid h-full overflow-hidden rounded-[2.4rem] border border-[var(--primary-color)] bg-white px-[4rem] py-[3.2rem]"
             >
               <div className="relative">
-                <div className="shadow-07 flex size-[6rem] items-center justify-center rounded-full bg-[#F6F6F9] transition-all duration-200 group-hover:bg-[transparent]">
+                <div className="flex size-[6rem] items-center justify-center rounded-full bg-[#F6F6F9] transition-all duration-200 group-hover:bg-[transparent]">
                   <item.icon className="size-[3rem] stroke-[1.5px] text-(--base-color-01) transition-all duration-200 group-hover:text-white" />
                 </div>
               </div>

@@ -1,4 +1,4 @@
-import { MoveRight } from "lucide-react";
+import { IdCard, MoveRight } from "lucide-react";
 import Image from "next/image";
 
 const linkItem = [
@@ -51,13 +51,7 @@ const PartnerSection = () => {
       </div>
 
       <div className="absolute top-[20rem] right-[5rem] aspect-[1.1/1] w-[5%]">
-        <Image
-          src="/images/rocket-02.svg"
-          alt="Image"
-          className="size-full object-contain object-center"
-          width={105}
-          height={71}
-        />
+        <IdCard className="size-[6rem] stroke-[1.5px] text-(--primary-color)" />
       </div>
 
       <div className="container">
